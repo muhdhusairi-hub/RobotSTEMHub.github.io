@@ -1,89 +1,24 @@
-<!DOCTYPE html>
-<html lang="ms">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RoboSTEMHub - Home</title>
-    <style>
-        :root {
-            --primary: #0056b3; /* Biru */
-            --secondary: #ff8c00; /* Jingga */
-            --success: #28a745; /* Hijau */
-            --light: #f8f9fa;
-            --dark: #333; /*fuk yu mell*/
-        }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #fff; color: var(--dark); }
-        header { background-color: var(--primary); padding: 15px; position: sticky; top: 0; z-index: 1000; }
-        nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; }
-        nav a { color: white; text-decoration: none; font-weight: bold; padding: 8px 15px; border-radius: 5px; transition: 0.3s; }
-        nav a:hover { background-color: var(--secondary); }
-        
-        .hero { 
-            background: linear-gradient(rgba(0, 86, 179, 0.7), rgba(255, 140, 0, 0.7)), url('https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=1200&q=80');
-            background-size: cover; background-position: center; height: 400px; 
-            display: flex; flex-direction: column; justify-content: center; align-items: center; 
-            color: white; text-align: center; padding: 20px;
-        }
-        .hero h1 { font-size: 3rem; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-        .hero p { font-size: 1.5rem; margin-bottom: 20px; font-style: italic; }
-        .btn { background-color: var(--success); color: white; padding: 12px 25px; text-decoration: none; border-radius: 25px; font-weight: bold; font-size: 1.1rem; }
-        .btn:hover { background-color: #218838; }
+<div class="grid-3">
+    
+    <div class="card border-blue">
+        <div class="card-icon" style="color: var(--blue);"><i class="fa-solid fa-graduation-cap"></i></div>
+        <h3>Structured Learning Paths</h3>
+        <p>Step-by-step modules covering basic sensors, obstacle-avoidance cars, Bluetooth control, and advanced IoT robotics.</p>
+        <a href="modules.html">View Modules &rarr;</a>
+    </div>
 
-        .container { padding: 40px 20px; max-width: 1200px; margin: auto; }
-        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px; }
-        .card { border: 1px solid #ddd; border-radius: 8px; padding: 20px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        .card h3 { color: var(--primary); }
-        
-        footer { background-color: var(--dark); color: white; text-align: center; padding: 20px; margin-top: 40px; }
-    </style>
-</head>
-<body>
+    <div class="card border-orange">
+        <div class="card-icon" style="color: var(--orange);"><i class="fa-solid fa-box-open"></i></div>
+        <h3>Hardware Bundles & Kits</h3>
+        <p>Get high-quality Arduino starter kits, chassis, and modules perfectly bundled to match your specific learning level.</p>
+        <a href="products.html">Browse Kits &rarr;</a>
+    </div>
 
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="learning.html">Arduino Robotics</a>
-            <a href="modules.html">Modules</a>
-            <a href="products.html">Kits & Products</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="utem.html">UTeM STEM</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="inquiry.html">Contact & Inquiry</a>
-        </nav>
-    </header>
+    <div class="card border-green">
+        <div class="card-icon" style="color: var(--green);"><i class="fa-solid fa-users-gear"></i></div>
+        <h3>UTeM-Inspired STEM Outreach</h3>
+        <p>Join a community powered by competitive mini robotics challenges, camp programmes, and deep community engagement.</p>
+        <a href="utem.html">See Outreach &rarr;</a>
+    </div>
 
-    <section class="hero">
-        <h1>RoboSTEMHub.com</h1>
-        <p>"Learn to Code, Build, and Automate with Arduino"</p>
-        <a href="modules.html" class="btn">Mula Belajar Sekarang!</a>
-    </section>
-
-    <main class="container">
-        <h2 style="text-align: center; color: var(--primary);">Selamat Datang ke RoboSTEMHub</h2>
-        <p style="text-align: center; font-size: 1.1rem;">Platform utama anda untuk meneroka dunia robotik dan automasi menggunakan teknologi Arduino.</p>
-        
-        <div class="features">
-            <div class="card">
-                <h3>Laluan Pembelajaran</h3>
-                <p>Direka khas daripada peringkat asas (Beginner) sehingga peringkat tinggi (Advanced).</p>
-                <a href="modules.html" style="color: var(--secondary);">Lihat Modul &rarr;</a>
-            </div>
-            <div class="card">
-                <h3>Kit Robotik Arduino</h3>
-                <p>Dapatkan kit perkakasan lengkap, casis robot, penderia (sensors), dan bundle tersusun untuk projek anda.</p>
-                <a href="products.html" style="color: var(--secondary);">Lihat Kedai &rarr;</a>
-            </div>
-            <div class="card">
-                <h3>Aktiviti STEM UTeM</h3>
-                <p>Inspirasi program komuniti, kelab robotik, dan cabaran mini robotik berpandukan standard industri.</p>
-                <a href="utem.html" style="color: var(--secondary);">Terokai Aktiviti &rarr;</a>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 RoboSTEMHub.com | BERC2393 Website Development Assignment</p>
-    </footer>
-
-</body>
-</html>
+</div>
